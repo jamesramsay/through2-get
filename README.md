@@ -28,11 +28,11 @@ var content = through2(function (chunk, encoding, cb) {
   return cb();
 })
 
-// Then use your map:
+// Then use your get:
 source.pipe(content).pipe(sink)
 
 // Works like `_.get` meaning you can specify a path and a default value
-var contentEach = map({excludeZBS: true}, 'content', '');
+var contentEach = get({excludeZBS: true}, 'content', '');
 
 // vs. with through2:
 var contentEach = through2(function (chunk, encoding, cb) {
