@@ -1,7 +1,7 @@
 {
   "name": "through2-get",
-  "version": "0.0.1",
-  "description": "A through2 to create an lodash.get analog for streams",
+  "version": "0.0.2",
+  "description": "A through2 to create a lodash.get analog for streams",
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=json ava",
@@ -37,7 +37,7 @@
   },
   "homepage": "https://github.com/jamesramsay/through2-get",
   "dependencies": {
-    "lodash": "^3.10.1",
+    "lodash.get": "^3.7.0",
     "through2": "^2.0.0",
     "xtend": "4.0.1"
   },
