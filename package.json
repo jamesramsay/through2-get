@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/jamesramsay/through2-get",
   "dependencies": {
-    "lodash.get": "^3.7.0",
+    "lodash.get": "^4.0.0",
     "through2": "^2.0.0",
     "xtend": "4.0.1"
   },
