@@ -8,7 +8,7 @@ test.cb('should not return content when no input provided', (t) => {
     if (this.read() !== null) t.fail();
   });
 
-  getContent.on('end', function end() {
+  getContent.on('end', () => {
     t.pass();
     t.end();
   });
@@ -30,7 +30,7 @@ test.cb('should return undefined if path cannot be resolved and no defaultValue 
     }
   });
 
-  getNoMatch.on('end', function end() {
+  getNoMatch.on('end', () => {
     t.end();
   });
 
@@ -52,7 +52,7 @@ test.cb('should return defaultValue if path cannot be resolved and a defaultValu
     }
   });
 
-  getDefaultMatch.on('end', function end() {
+  getDefaultMatch.on('end', () => {
     t.end();
   });
 
@@ -74,7 +74,7 @@ test.cb('should return the value at the specified path', (t) => {
     }
   });
 
-  getContent.on('end', function end() {
+  getContent.on('end', () => {
     t.end();
   });
 
@@ -119,7 +119,7 @@ test.cb('should not return zero-byte string by default', (t) => {
     }
   });
 
-  getContent.on('end', function end() {
+  getContent.on('end', () => {
     t.end();
   });
 
@@ -168,7 +168,7 @@ test.cb('should return zero-byte string if excludeZBS is true', (t) => {
     }
   });
 
-  getContent.on('end', function end() {
+  getContent.on('end', () => {
     t.end();
   });
 
