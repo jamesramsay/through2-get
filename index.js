@@ -1,8 +1,5 @@
 'use strict';
 
-module.exports = make;
-module.exports.ctor = ctor;
-
 var through2 = require('through2');
 var get = require('lodash.get');
 var xtend = require('xtend');
@@ -34,3 +31,6 @@ function ctor(options, propPath, defaultValue) {
 function make(options, propPath, defaultValue) {
   return ctor(options, propPath, defaultValue)();
 }
+
+module.exports = make;
+module.exports.ctor = ctor;
