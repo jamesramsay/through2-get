@@ -26,7 +26,7 @@ test.cb('should return undefined if path cannot be resolved and no defaultValue 
   getNoMatch.on('readable', function read() {
     let chunk = null;
     while ((chunk = this.read()) !== null) {
-      t.same(chunk, undefined);
+      t.deepEqual(chunk, undefined);
     }
   });
 
@@ -48,7 +48,7 @@ test.cb('should return defaultValue if path cannot be resolved and a defaultValu
   getDefaultMatch.on('readable', function read() {
     let chunk = null;
     while ((chunk = this.read()) !== null) {
-      t.same(chunk, 'NOPE');
+      t.deepEqual(chunk, 'NOPE');
     }
   });
 
@@ -70,7 +70,7 @@ test.cb('should return the value at the specified path', (t) => {
   getContent.on('readable', function read() {
     let chunk = null;
     while ((chunk = this.read()) !== null) {
-      t.same(chunk, input.content);
+      t.deepEqual(chunk, input.content);
     }
   });
 
@@ -114,7 +114,7 @@ test.cb('should not return zero-byte string by default', (t) => {
   getContent.on('readable', function read() {
     let chunk = null;
     while ((chunk = this.read()) !== null) {
-      t.same(chunk, exptected[index]);
+      t.deepEqual(chunk, exptected[index]);
       index += 1;
     }
   });
@@ -163,7 +163,7 @@ test.cb('should return zero-byte string if excludeZBS is true', (t) => {
   getContent.on('readable', function read() {
     let chunk = null;
     while ((chunk = this.read()) !== null) {
-      t.same(chunk, exptected[index]);
+      t.deepEqual(chunk, exptected[index]);
       index += 1;
     }
   });
