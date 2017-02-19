@@ -5,10 +5,13 @@
   "main": "index.js",
   "scripts": {
     "test": "nyc --reporter=json ava",
-    "posttest": "if check-node-version --node '>= 4'; then npm run lint; else echo 'Skipped posttest'; fi",
+    "posttest": "npm run lint",
     "coverage": "istanbul report --reporter=html && open coverage/lcov-report/index.html",
     "codecov": "cat coverage/coverage-final.json | codecov",
     "lint": "eslint ./src ./test"
+  },
+  "engines": {
+    "node": ">=4.0.0"
   },
   "config": {
     "nyc": {
@@ -43,15 +46,15 @@
     "xtend": "4.0.1"
   },
   "devDependencies": {
-    "ava": "^0.15.2",
+    "ava": "^0.18.2",
     "check-node-version": "^1.1.1",
     "codecov.io": "^0.1.6",
     "eslint": "^3.1.0",
-    "eslint-config-airbnb-base": "^4.0.0",
-    "eslint-plugin-ava": "^2.4.0",
-    "eslint-plugin-import": "^1.8.1",
+    "eslint-config-airbnb-base": "^11.1.0",
+    "eslint-plugin-ava": "^4.2.0",
+    "eslint-plugin-import": "^2.2.0",
     "istanbul": "^0.4.1",
-    "nyc": "^7.0.0"
+    "nyc": "^10.1.2"
   },
   "publishConfig": {
     "tag": "latest"
