@@ -2,7 +2,6 @@
 
 var through2 = require('through2');
 var get = require('lodash.get');
-var xtend = require('xtend');
 
 var ZERO_BYTE_STRING = '';
 
@@ -12,7 +11,7 @@ function ctor(options, propPath, defaultValue) {
     propPath = options;
     options = {};
   }
-  options = xtend({objectMode: true, highWaterMark: 16, excludeZBS: true}, options)
+  options = Object.assign({objectMode: true, highWaterMark: 16, excludeZBS: true}, options)
 
   var Get = through2.ctor(options, function (chunk, encoding, cb) {
     var out = get(chunk, propPath, defaultValue);
