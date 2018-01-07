@@ -48,7 +48,7 @@
     "ava": "^0.24.0",
     "check-node-version": "^3.0.0",
     "codecov.io": "^0.1.6",
-    "eslint": "^3.1.0",
+    "eslint": "^4.15.0",
     "eslint-config-airbnb-base": "^11.1.0",
     "eslint-plugin-ava": "^4.2.0",
     "eslint-plugin-import": "^2.2.0",
