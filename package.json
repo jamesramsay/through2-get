@@ -42,7 +42,7 @@
   "homepage": "https://github.com/jamesramsay/through2-get",
   "dependencies": {
     "lodash.get": "^4.0.0",
-    "through2": "^2.0.0"
+    "through2": "^3.0.0"
   },
   "devDependencies": {
     "ava": "^0.25.0",
