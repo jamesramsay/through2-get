@@ -45,7 +45,7 @@
     "through2": "^2.0.0"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
+    "ava": "^3.4.0",
     "check-node-version": "^3.0.0",
     "codecov.io": "^0.1.6",
     "eslint": "^4.15.0",
