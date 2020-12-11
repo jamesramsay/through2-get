@@ -1,7 +1,7 @@
 'use strict';
 
 var through2 = require('through2');
-var get = require('lodash.get');
+var get = require('lodash/get');
 
 var ZERO_BYTE_STRING = '';
 
