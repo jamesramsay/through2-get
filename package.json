@@ -11,7 +11,7 @@
     "lint": "eslint ./src ./test"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.9.0"
   },
   "config": {
     "nyc": {
