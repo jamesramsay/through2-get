@@ -1,5 +1,5 @@
 import test from 'ava';
-import get from '../';
+import get from '..';
 
 test.cb('should not return content when no input provided', (t) => {
   const getContent = get('content');

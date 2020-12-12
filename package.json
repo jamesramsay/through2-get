@@ -41,19 +41,19 @@
   },
   "homepage": "https://github.com/jamesramsay/through2-get",
   "dependencies": {
-    "lodash.get": "^4.0.0",
-    "through2": "^2.0.0"
+    "lodash": "^4.17.20",
+    "through2": "^4.0.2"
   },
   "devDependencies": {
     "ava": "^0.25.0",
     "check-node-version": "^3.0.0",
     "codecov.io": "^0.1.6",
     "eslint": "^4.15.0",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-ava": "^4.3.0",
+    "eslint-config-airbnb-base": "^13.2.0",
+    "eslint-plugin-ava": "^4.5.1",
     "eslint-plugin-import": "^2.8.0",
     "istanbul": "^0.4.1",
-    "nyc": "^11.3.0"
+    "nyc": "^14.1.1"
   },
   "publishConfig": {
     "tag": "latest"
