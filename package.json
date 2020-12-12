@@ -1,6 +1,6 @@
 {
   "name": "through2-get",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A through2 to create a lodash.get analog for streams",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
     "lint": "eslint ./src ./test"
   },
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=6.9"
   },
   "config": {
     "nyc": {
