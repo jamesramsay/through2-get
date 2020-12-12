@@ -2,6 +2,7 @@
 
 [![Version](https://img.shields.io/npm/v/through2-get.svg)](https://npmjs.com/package/through2-get)
 [![License](https://img.shields.io/npm/l/through2-get.svg)](https://npmjs.com/package/through2-get)
+[![Test](https://github.com/jamesramsay/through2-get/workflows/Test/badge.svg)](https://github.com/jamesramsay/through2-get/actions)
 [![Build Status](https://img.shields.io/travis/jamesramsay/through2-get.svg)](https://travis-ci.org/jamesramsay/through2-get)
 [![Coverage Status](https://img.shields.io/codecov/c/github/jamesramsay/through2-get.svg)](https://codecov.io/github/jamesramsay/through2-get)
 [![Dependency Status](https://img.shields.io/david/jamesramsay/through2-get.svg)](https://david-dm.org/jamesramsay/through2-get)
